@@ -1,0 +1,12 @@
+trigger:
+  - main
+
+jobs:
+  build:
+    image: rust:lts
+    steps:
+      - cargo build
+  test:
+    image: rust:lts
+    steps:
+      - cargo test
